@@ -8,81 +8,126 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 45 15% 96%;
+    --foreground: 45 65% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 45 65% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 45 65% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Sticky note yellow as primary */
+    --primary: 48 95% 65%;
+    --primary-foreground: 45 65% 20%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 48 90% 85%;
+    --secondary-foreground: 45 65% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 45 20% 92%;
+    --muted-foreground: 45 25% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 48 100% 75%;
+    --accent-foreground: 45 65% 20%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 48 30% 85%;
+    --input: 48 30% 85%;
+    --ring: 48 95% 65%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
+
+    /* Note color variants */
+    --note-yellow: 48 95% 70%;
+    --note-yellow-border: 48 85% 55%;
+    --note-yellow-shadow: 48 65% 45%;
+    
+    --note-pink: 340 85% 80%;
+    --note-pink-border: 340 75% 65%;
+    --note-pink-shadow: 340 55% 50%;
+    
+    --note-blue: 200 85% 75%;
+    --note-blue-border: 200 75% 60%;
+    --note-blue-shadow: 200 55% 45%;
+    
+    --note-green: 145 65% 75%;
+    --note-green-border: 145 55% 60%;
+    --note-green-shadow: 145 45% 45%;
+    
+    --note-purple: 270 70% 80%;
+    --note-purple-border: 270 60% 65%;
+    --note-purple-shadow: 270 50% 50%;
+
+    /* Toolbar styling */
+    --toolbar-bg: 48 90% 88%;
+    --toolbar-hover: 48 85% 75%;
+    --toolbar-text: 45 65% 25%;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 45 20% 12%;
+    --foreground: 45 15% 90%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 45 25% 15%;
+    --card-foreground: 45 15% 90%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 45 25% 15%;
+    --popover-foreground: 45 15% 90%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 48 85% 55%;
+    --primary-foreground: 45 65% 20%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 45 25% 20%;
+    --secondary-foreground: 45 15% 90%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 45 25% 20%;
+    --muted-foreground: 45 15% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 48 75% 45%;
+    --accent-foreground: 45 15% 90%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 45 25% 20%;
+    --input: 45 25% 20%;
+    --ring: 48 85% 55%;
+
+    --note-yellow: 48 75% 50%;
+    --note-yellow-border: 48 65% 40%;
+    --note-yellow-shadow: 48 45% 30%;
+    
+    --note-pink: 340 65% 55%;
+    --note-pink-border: 340 55% 45%;
+    --note-pink-shadow: 340 45% 35%;
+    
+    --note-blue: 200 65% 50%;
+    --note-blue-border: 200 55% 40%;
+    --note-blue-shadow: 200 45% 30%;
+    
+    --note-green: 145 50% 50%;
+    --note-green-border: 145 40% 40%;
+    --note-green-shadow: 145 35% 30%;
+    
+    --note-purple: 270 55% 60%;
+    --note-purple-border: 270 45% 50%;
+    --note-purple-shadow: 270 40% 40%;
+
+    --toolbar-bg: 45 30% 18%;
+    --toolbar-hover: 45 35% 25%;
+    --toolbar-text: 45 15% 85%;
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
